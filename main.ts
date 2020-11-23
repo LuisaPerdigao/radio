@@ -1,11 +1,12 @@
 input.onButtonPressed(Button.A, function () {
-    radio.sendString("Ola")
+    radio.sendString("")
 })
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)
-    basic.showIcon(IconNames.Heart)
-})
-input.onButtonPressed(Button.B, function () {
-	
+    basic.showString("Ola")
+    for (let index = 0; index < 4; index++) {
+        basic.showIcon(IconNames.Heart)
+        basic.showIcon(IconNames.SmallHeart)
+    }
 })
 radio.setGroup(7)

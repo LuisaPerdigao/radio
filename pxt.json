@@ -1,5 +1,5 @@
 {
-    "name": "Radio",
+    "name": "Radio emissor",
     "description": "",
     "dependencies": {
         "core": "*",
